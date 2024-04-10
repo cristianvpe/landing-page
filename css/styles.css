@@ -6637,7 +6637,8 @@ fieldset:disabled .btn {
 }
 
 .carousel-inner {
-  height: 600px;
+  height: 550px;
+  width: 100%;
 }
 
 .carousel-inner img {
@@ -6852,6 +6853,12 @@ fieldset:disabled .btn {
 }
 .title-form{
   text-align: center;
+}
+.btn-dark {
+  margin: auto;
+  margin-bottom: 1.4em ;
+  display: block;
+  width: 200px;
 }
 .spinner-grow,
 .spinner-border {
