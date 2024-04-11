@@ -6853,6 +6853,7 @@ fieldset:disabled .btn {
 }
 .title-form{
   text-align: center;
+  margin-top: 1.4em;
 }
 .btn-dark {
   margin: auto;
@@ -13529,4 +13530,9 @@ fieldset:disabled .btn {
   height: 4rem;
   width: 4rem;
   font-size: 2rem;
+}
+
+.map-image{
+  text-align: center;
+  margin-bottom: 2em;
 }

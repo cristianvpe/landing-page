@@ -21,3 +21,4 @@ btnReproducir.addEventListener('click', () => {
         iconoReproducir.classList.add('bi-play-fill'); 
     }
 });
+
