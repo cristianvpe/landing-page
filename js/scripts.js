@@ -6,19 +6,20 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 
+
 const audio = document.getElementById('audio');
 const btnReproducir = document.getElementById('btnReproducir');
-const iconoReproducir = document.getElementById('iconoReproducir');
 
-btnReproducir.addEventListener('click', () => {
-    if (audio.paused) {
-        audio.play();
-        iconoReproducir.classList.remove('bi-play-fill');
-        iconoReproducir.classList.add('bi-pause-fill'); 
-    } else {
-        audio.pause();
-        iconoReproducir.classList.remove('bi-pause-fill');
-        iconoReproducir.classList.add('bi-play-fill'); 
-    }
+btnReproducir.addEventListener('click', function() {
+  if (audio.paused) {
+    audio.play();
+    btnReproducir.querySelector('#iconoReproducir').classList.remove('bi-play-fill');
+    btnReproducir.querySelector('#iconoReproducir').classList.add('bi-pause-fill');
+  } else {
+    audio.pause();
+    btnReproducir.querySelector('#iconoReproducir').classList.remove('bi-pause-fill');
+    btnReproducir.querySelector('#iconoReproducir').classList.add('bi-play-fill');
+  }
 });
 
+  

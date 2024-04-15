@@ -6878,7 +6878,7 @@ fieldset:disabled .btn {
   margin-top: 1.4em;
 }
 .btn-dark {
-  margin: auto;
+  margin: 2em;
   margin-bottom: 1.4em ;
   display: block;
   width: 200px;
@@ -13580,3 +13580,8 @@ footer{
     width: 200px;
   }
 }
+
+.bi-play-fill{
+  margin: 0.5em;
+}
+
