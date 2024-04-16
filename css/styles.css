@@ -13585,18 +13585,3 @@ footer{
   margin: 0.5em;
 }
 
-.btn:hover {
-  transform: scale(0.95);
-   box-shadow:0 10px 20px rgba(0, 0, 0, 0.18), 0 6px 6px rgba(0, 0, 0, 0.22);
-}
-.btn {
-  transition: transform 0.5s ease; 
-}
-
-.btn-dark { 
-  width: 200px; 
-  height: 50px; 
-  font-size: 18px;
-  padding: 10px 20px; 
-  line-height: 30px; 
-}
