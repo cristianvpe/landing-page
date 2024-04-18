@@ -6658,21 +6658,35 @@ fieldset:disabled .btn {
   touch-action: pan-y;
 }
 
-.carousel-inner {
-  height: 550px;
-  width: 100%;
-}
 
-.carousel-inner img {
-  width: 100%;
-  max-height: 1060px;
-}
 
 .carousel-inner::after {
   display: block;
   clear: both;
   content: "";
 }
+
+.carousel-container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
+.carousel-inner {
+  height: 700px;
+
+}
+
+#carouselExample {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+}
+
 
 .carousel-item {
   position: relative;
@@ -6682,7 +6696,7 @@ fieldset:disabled .btn {
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -13559,9 +13573,7 @@ fieldset:disabled .btn {
   margin-bottom: 2em;
 }
 
-.map-image img {
-  width: 80%;
-}
+
 footer{
   background-color: #0a58ca;
 }
@@ -13583,5 +13595,43 @@ footer{
 
 .bi-play-fill{
   margin: 0.5em;
+}
+
+@media (max-width: 768px) { 
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none; 
+  }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #e74c3c; /* Adjust background color (consider contrast) */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 18px; /* Increase padding for a bigger button */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 20px; /* Increase font size for better visibility */
+  transition: all 0.3s ease; /* Add smooth transition on hover */
+}
+
+#myBtn:hover {
+  background-color: #c0392b; /* Darker background on hover */
+}
+
+/* Show the button when the user scrolls down (optional): */
+.scrolled #myBtn {
+  display: block;
+}
+
+.form-control {
+  width: 600px; /* Adjust the width as needed */
+  justify-content: center;
 }
 

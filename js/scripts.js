@@ -22,4 +22,14 @@ btnReproducir.addEventListener('click', function() {
   }
 });
 
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 100) { // Show button after scrolling 100px
+    document.getElementById('scroll-button-container').classList.add('scrolled');
+  } else {
+    document.getElementById('scroll-button-container').classList.remove('scrolled');
+  }
+});
 
+function topFunction() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}

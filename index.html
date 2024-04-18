@@ -12,94 +12,101 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <div class="container px-lg-5">
-      <a class="navbar-brand" href="#!">
-        <img src="images/bear-7269323_1280.png" alt="Reto Aranjuez Logo" width="120" height="50">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <!-- <audio id="audio" src="audio.mp3" type="audio"></audio>
+  <div class="vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container px-lg-5">
+        <a class="navbar-brand" href="#!">
+          <img src="images/bear-7269323_1280.png" alt="Reto Aranjuez Logo" width="120" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- <audio id="audio" src="audio.mp3" type="audio"></audio>
           <button id="btnReproducir" class="btn btn-outline-danger">
             <span id="iconoReproducir" class="bi bi-play-fill"></span>
           </button> -->
 
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#!">Reglas</a>
-          </li>
-          <li class="nav-item">
+            <!-- <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="">Inicio</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#formulario">Contacto</a>
+            </li>
+            <!-- <li class="nav-item">
             <a class="nav-link" href="#!">Ranking</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#!">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <header class="py-5 hero-section">
-    <div class="container px-lg-5">
-      <div class="row d-flex justify-content-center align-items-center text-center">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <h1 class="display-4 fw-bold mb-4">¡Reto Aranjuez!</h1>
-
-          <div class="audio-controls text-center">
-            <audio id="audio" src="audio.mp3" type="audio"></audio>
-            <button id="btnReproducir" class="btn btn-outline-dark">
-              <span id="iconoReproducir" class="bi bi-play-fill"></span>
-            </button>
-          </div>
-
-          <div class="text-content mt-4">
-            <p class="lead mb-4 fw-bold">¿Cuánto sabes sobre la historia, cultura y lugares emblemáticos de Aranjuez?
-              ¡Pon a prueba tus conocimientos en este divertido juego de preguntas!</p>
-          </div>
-
-          <div class="d-flex justify-content-center">
-            <a class="btn btn-dark me-2" href="#!">¡Juega Ahora!</a>
-            <div class="btnMapa"></div>
-            <a class="btn btn-dark" href="images/mapa.png" target="_blank">Descargar Mapa</a>
-          </div>
-
-          <img src="images/bear-7269323_1280.png" width="100%"></img>
+          </li> -->
+          </ul>
         </div>
       </div>
-    </div>
-  </header>
+    </nav>
 
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/aranjuez.jpg" alt="palacio">
+    <header class="py-5 hero-section">
+      <div class="container px-lg-5">
+        <div class="row d-flex justify-content-center align-items-center text-center">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <h1 class="display-4 fw-bold mb-4">¡Reto Aranjuez!</h1>
+
+            <div title="Pulsa para repoducir" class="audio-controls text-center">
+              <audio id="audio" src="audio.mp3" type="audio"></audio>
+              <button id="btnReproducir" class="btn btn-outline-dark">
+                <span id="iconoReproducir" class="bi bi-play-fill"></span>
+              </button>
+            </div>
+
+            <div class="text-content mt-4">
+              <p class="lead mb-4 fw-bold">¿Cuánto sabes sobre la historia, cultura y lugares emblemáticos de Aranjuez?
+                ¡Pon a prueba tus conocimientos en este divertido juego de preguntas!</p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-dark me-2 animate__animated animate__bounceIn animate__infinite" href="#!">¡Juega
+                Ahora!</a>
+              <div class="btnMapa"></div>
+              <a class="btn btn-dark" href="images/mapa.png" target="_blank">Descargar Mapa</a>
+            </div>
+
+            <img src="images/bear-7269323_1280.png" width="60%"></img>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="images/aranjuez2.jpeg" alt="chinescos">
+  </div>
+  </header>
+  
+  <div class="vh-100 d-flex">
+    <div id="carouselExample" class="carousel slide flex-shrink-0 position-relative">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/aranjuez.jpg" alt="palacio" class="w-100 h-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/aranjuez2.jpeg" alt="chinescos" class="w-100 h-100">
+        </div>
+        <div class="carousel-item">
+          <img src="images/aranjuez3.jpg" alt="fuente" class="w-100 h-100">
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="images/aranjuez3.jpg" alt="fuente">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
 
+  <div class="vh-100 d-flex-basis">
   <div class="map">
     <h1 class="title-form">Mapa de Aranjuez</h1>
     <p class="lead mb-4 fw-bold text-center">Accede al mapa de la ciudad y descubre sus rincones</p>
@@ -108,36 +115,49 @@
     </div>
   </div>
 
-  <div class="container mt-3">
-    <h1 class="title-form">Formulario de contacto</h1>
+
+
+  <div class="container mt-3 vh-100">
+    <h1 class="title-form" id="formulario">Formulario de contacto</h1>
     <div class="mb-3">
-      <label for="nombre" class="form-label">Nombre:</label>
+      <label for="nombre" class="form-label fs-4 text-center">Nombre completo:</label>
       <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
     </div>
+  
+    <div class="mb-3">
+      <label for="nombre" class="form-label fs-4 text-center">Teléfono:</label>
+      <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Introduce tu teléfono" required>
+    </div>
 
     <div class="mb-3">
-      <label for="email" class="form-label">Correo electrónico:</label>
+      <label for="email" class="form-label fs-4 text-center">Correo electrónico:</label>
       <input type="email" class="form-control" id="email" name="email" placeholder="Introduce tu email" required>
     </div>
-
+  
     <div class="mb-3">
-      <label for="dudas" class="form-label">Dudas o sugerencias:</label>
-      <textarea class="form-control" id="dudas" name="dudas" rows="3" placeholder="Escribe tu mensaje"
-        required></textarea>
+      <label for="dudas" class="form-label fs-4 text-center">Dudas o sugerencias:</label>
+      <textarea class="form-control" id="dudas" name="dudas" rows="3" placeholder="Escribe tu mensaje" required></textarea>
     </div>
-
+  
     <div class="d-flex justify-content-center">
       <button type="submit" id="formulario" class="btn btn-dark text-center">Enviar</button>
     </div>
   </div>
+  
+
 
   <footer class="py-3 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-muted ">
         &copy; 2024 CristianVP <a href="https://github.com/cristianvpe">Github</a>
       </p>
+      <div id="scroll-button-container">
+        <img id="myBtn" src="images/arrow-up.svg" onclick="topFunction()" >
+      </div>
     </div>
   </footer>
+
+
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
