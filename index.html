@@ -44,12 +44,13 @@
         <div class="col-lg-8 col-md-10">
           <h1 class="display-4 fw-bold mb-4">¡Reto Aranjuez!</h1>
 
-          <div title="Pulsa para repoducir" class="audio-controls text-center">
-            <audio id="audio" src="audio.mp3" type="audio"></audio>
-            <button id="btnReproducir" class="btn btn-outline-dark">
+          <button id="btnReproducir" class="btn btn-outline-dark" onmouseover="mostrarControl()" onmouseout="ocultarControl()">
+            <div title="Pulsa para reproducir" class="audio-controls text-center">
               <span id="iconoReproducir" class="bi bi-play-fill"></span>
-            </button>
-          </div>
+              <audio id="audio" src="audio.mp3" type="audio"></audio>
+            </div>
+          </button>
+
 
           <div class="text-content mt-4">
             <p class="lead mb-4 fw-bold">¿Cuánto sabes sobre la historia, cultura y lugares emblemáticos de Aranjuez?
