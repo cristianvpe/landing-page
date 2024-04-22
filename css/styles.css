@@ -94,7 +94,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: cursive;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -13631,7 +13631,11 @@ footer{
 }
 
 .form-control {
-  width: 600px; /* Adjust the width as needed */
-  justify-content: center;
+  width: 500px;
+
 }
 
+.formulario {
+  margin: 0 auto; 
+  width: fit-content; 
+}
